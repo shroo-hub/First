@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Appointment - Premier Notary</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+  <div class="container header-container">
+    <h1 class="logo">
+      <a href="index.html">
+        <img src=" " alt="Premier Notary Logo" class="logo-img" />
+        <span class="logo-text">
+          NOTARY
+          <span class="subtitle">NEAR YOU</span>
+        </span>
+      </a>
+
+    </h1>
+    <nav>
+      <ul class="nav-links">
+          <li><a href="index.html?#home">Home</a></li>
+          <li><a href="index.html?#about">About Us</a></li>
+          
+<li class="dropdown">
+  <a href="#">Services <i class="fas fa-caret-down"></i></a>
+  <ul class="dropdown-menu">
+    <li><a href="services.html#affidavits-&-statutory-declarations">Affidavits & Statutory Declarations</a></li>
+    <li><a href="services.html#educational-document-autentication">Educational Document Autentication</a></li>
+    <li><a href="services.html#oaths-&-affirmations-administered">Oaths & Affirmations Administered</a></li>
+
+<li><a href="services.html#certified-true-copies">Certified True copies</a></li>
+<li><a href="services.html#power-of-attorney-notarization">Power of Attorney Notarization</a></li>
+
+  </ul>
+</li>
+
+
+          <li><a href="index.html?#testimonials">Testimonials</a></li>
+          <li><a href="index.html?#contact">Contact</a></li>
+          <li><a href="appointment.html" class="btn small primary">Consult</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Appointment Section -->
+  <section id="appointment">
+    <div class="container">
+      <h3 class="section-title">Schedule an Appointment</h3>
+      <form id="appointment-form" method="post">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="service">Select Service</label>
+        <select id="service" name="service" required>
+          <option value="Affidavits & Statutory Declarations">Affidavits & Statutory Declarations</option>
+          <option value="Educational Document Authentication">Educational Document Authentication</option>
+          <option value="Oaths & Affirmations Administered">Oaths & Affirmations Administered</option>
+          <option value="Certified True Copies">Certified True Copies</option>
+          <option value="Power of Attorney Notarization">Power of Attorney Notarization</option>
+        </select>
+
+        <label for="date">Preferred Appointment Date</label>
+        <input type="date" id="date" name="date" required />
+
+        <button type="submit" class="btn primary">Schedule Appointment</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    
+   
+    <p class="copyright">&copy; 2025 Premier Notary Services. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
